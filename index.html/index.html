@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pomodoro-container">
+        <header class="header">
+            <h1>Never Stress</h1>
+            <p>Plan your day, stay productive and accomplish your goals</p>
+        </header>
+
+        <div class="timer-wrapper">
+            <div class="timer">
+                <svg class="progress-ring" width="300" height="300">
+                    <circle class="progress-ring__circle" stroke="lightblue" stroke-width="6" fill="transparent" r="140" cx="150" cy="150"/>
+                </svg>
+                <div class="time-display" id="time">25:00</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
